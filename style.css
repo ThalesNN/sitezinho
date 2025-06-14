@@ -1,0 +1,177 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 98%;
+  background-color: #ff9797;
+  color: #486966;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Espaço extra para não esconder o conteúdo abaixo do header */
+body {
+  padding-top: 200px;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+/* CALENDÁRIO */
+h2{
+    color: #3B3936;
+    background-color: #B2BEBF;
+}
+.calendario {
+  width: 40%;
+  padding: 20px;
+  background-color: #BD2A2E;
+  box-shadow: #333;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.selecao-data {
+  margin-bottom: 10px;
+}
+
+.dias-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.dias-grid div {
+  padding: 10px;
+  background-color: #e0e0e0;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* MINHAS TAREFAS */
+.tarefas-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.minhas-tarefas,
+.contador-enem {
+  background-color: #BD2A2E;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#lista-tarefas li {
+  margin-bottom: 5px;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
+button {
+  background-color: #d93030;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b72222;
+}
+
+.menu {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.menu button {
+  background-color: #ffffff;
+  color: #d93030;
+  border: 2px solid #d93030;
+  margin: 5px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.menu button:hover {
+  background-color: #d93030;
+  color: white;
+}
+.conteudo {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.links-uteis {
+  margin-top: 20px;
+}
+
+.link-item {
+  background-color: #dad3d3;
+  border-left: 5px solid #d93030;
+  padding: 12px 16px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.link-item p {
+  margin: 0 0 8px 0;
+  font-weight: 500;
+}
+
+.link-item a {
+  background-color: #d93030;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.link-item a:hover {
+  background-color: #a62323;
+}

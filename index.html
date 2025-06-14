@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Site Vestibulando</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+    <h1>๋ ࣭ ⭑๋ ࣭𝑆𝚒𝘵𝒆 𝕕𝒆 𝙴𝕤𝘵ս𝕕◎𝕤๋ ࣭ ⭑๋ </h1>
+    <nav class="menu">
+  <button onclick="window.location.href='index.html'">Página Principal</button>
+  <button onclick="window.location.href='pagina2.html'">Segunda Aba</button>
+</nav>
+
+  </header>
+  <div class="container">
+    <!-- Calendário -->
+    <div class="calendario">
+      <h2>๋ ࣭ ⭑๋ ࣭ ⭑𝐂𝙖ʟ𝒆𝑛𝕕á𝚛𝚒◎๋ ࣭ ⭑๋ ࣭ ⭑</h2>
+      <div class="selecao-data">
+        <select id="ano"></select>
+        <select id="mes"></select>
+      </div>
+      <div id="dias" class="dias-grid"></div>
+    </div>
+
+    <!-- Minhas Tarefas -->
+    <div class="tarefas-container">
+      <div class="minhas-tarefas">
+        <h2>𝕄𝚒𝑛ₕ𝙖𝕤  𝘵𝙖𝚛𝒆𝕗𝙖𝕤๋ ࣭ ⭑๋ ࣭ ⭑</h2>
+        <ul id="lista-tarefas"></ul>
+      </div>
+
+      <!-- Contador ENEM -->
+      <div class="contador-enem">
+        <h2>𝐂◎𝑛𝘵𝙖𝕕◎𝚛 𝙴𝛮𝙴𝕄</h2>
+        <p id="contador"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal To-do -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="fechar-modal">&times;</span>
+      <h3>To-do para <span id="data-selecionada"></span></h3>
+      <input type="text" id="nova-tarefa" placeholder="Digite uma tarefa" />
+      <button id="adicionar-tarefa">Adicionar</button>
+      <ul id="tarefas-do-dia"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
